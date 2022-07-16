@@ -1,6 +1,5 @@
 body {
-    
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #000000;
 }
 
@@ -72,7 +71,7 @@ header {
     background-repeat: repeat;
     position: relative;
     z-index: -2;
-    
+
 }
 
 .overlap_top::before {
@@ -114,6 +113,7 @@ header {
     grid-template-columns: 1.8em auto;
     grid-template-rows: repeat(3, auto);
     margin: 0 calc( 2px + 70 * (100vw / 1920));
+    font-family: 'Open Sans', sans-serif;
 }
 
 .top_text :nth-child(1) {
@@ -154,19 +154,20 @@ header {
 
 .services {
     background-color: #ffffff;
-    padding: 1em;
-    border-radius: 0.5em;
+    padding: calc(16px + 40 * (100vw / 1920));
+    border-radius: calc(8px + 32 * (100vw / 1920));
     box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.25), 29px 17px 14px rgba(0, 0, 0, 0.55);
 }
 
 .services h2 {
-    font-size: calc(26px + 30 * (100vw / 1920));
+    font-size: calc(20px + 30 * (100vw / 1920));
     font-weight: 900;
     color: #000000;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .services p {
-    font-size: 1em;
+    font-size: calc(11px + 8 * (100vw / 1920));
 }
 
 .services span {
@@ -176,15 +177,20 @@ header {
 
 .partner {
     font-size: calc(11px + 25 * (100vw / 1920));
-    margin: calc(8px + 40 * (100vw / 1920)) 0 ;
+    margin: calc(8px + 40 * (100vw / 1920)) auto ;
     color: #ffffff;
     font-weight: 600;
+    max-width: 1140px;
+    width: 100%;
 }
 
 .certificates {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1em;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .certificates img {
@@ -198,8 +204,11 @@ header {
 .industry_and_statistics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    grid-template-rows: repeat(4, auto);
     grid-gap: 2em;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .industry_and_statistics img{
@@ -212,6 +221,13 @@ header {
 
 .industry_and_statistics h3 :nth-child(2) {
     color: #FB202A;
+}
+
+.industry_and_statistics h2 {
+    font-size: calc(11px + 25 * (100vw / 1920));
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 0;
 }
 
 .industry_and_statistics h3 {
@@ -238,29 +254,40 @@ header {
 .img_item-1 {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .img_item-2 {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .img_item-3 {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .img_item-4 {
     grid-column-start: 2;
     grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .clients {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: #1A1A1A;
-    margin: -1em;
-    padding: 1em;
+    margin: calc( -2px - 70 * (100vw / 1920));
+    padding-top: 0;
+    padding-left: calc( 0px + 110 * (100vw / 1920));
+    padding-right: calc( 0px + 110 * (100vw / 1920));
+    padding-bottom: calc( 0px + 110 * (100vw / 1920));
     align-items: center;
 }
 
@@ -283,17 +310,25 @@ header {
 .clients h2 {
     grid-column-start: 1;
     grid-column-end: 6;
+    font-size: calc(8px + 40 * (100vw / 1920));
+    text-align: center;
+    font-weight: normal;
 }
 
 .our_works {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 12em 10em 1fr;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .our_works h2 {
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
     text-align: center;
 }
 
@@ -337,14 +372,32 @@ header {
     object-fit: cover;
 }
 
-.work_item {
+.work_item-1 {
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.work_item-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.work_item-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .our_works h3 {
     grid-column-start: 1;
     grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
     font-weight: normal;
 }
 
@@ -355,7 +408,7 @@ header {
     padding: 1em;
     border-radius: 0.5em;
     box-shadow: 0px -11px 24px rgba(0, 0, 0, 0.25), 29px 17px 14px rgba(0, 0, 0, 0.55);
-    margin: 0 1em;
+    margin: 0 calc( 2px + 70 * (100vw / 1920));
 }
 
 .project_type img {
