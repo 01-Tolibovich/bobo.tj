@@ -72,6 +72,7 @@ header {
     background-repeat: repeat;
     position: relative;
     z-index: -2;
+    
 }
 
 .overlap_top::before {
