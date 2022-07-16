@@ -68,7 +68,7 @@ header {
 }
 
 .wrapper {
-    background:  url(/images/bg.png);
+    background:  url(images/bg.png);
     background-repeat: repeat;
     position: relative;
     z-index: -2;
