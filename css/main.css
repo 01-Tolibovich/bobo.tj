@@ -344,9 +344,7 @@ header {
         grid-row-start: 3;
     -ms-grid-row-span: 1;
     grid-row-end: 4;
-    -webkit-transform: translateX(100%);
-        -ms-transform: translateX(100%);
-            transform: translateX(100%);
+    padding-left: 20px;
 }
 
 .services {
